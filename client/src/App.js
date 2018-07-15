@@ -34,15 +34,6 @@ class App extends Component {
     this.setState({ token: token });
     this.playerCheckInterval = setInterval(() => this.checkForPlayer(), 1000);
   }
-
-  // when we click the "go" button
-  handleLogin() {
-    if (this.state.token !== "") {
-      // change the loggedIn variable, then start checking for the window.Spotify variable
-      this.setState({ loggedIn: true });
-      this.playerCheckInterval = setInterval(() => this.checkForPlayer(), 1000);
-    }
-  }
   
   // when we receive a new update from the player
   onStateChanged(state) {
@@ -111,7 +102,7 @@ class App extends Component {
       clearInterval(this.playerCheckInterval);
       // create a new player
       this.player = new window.Spotify.Player({
-        name: "Matt's Spotify Player",
+        name: "Spotatofy",
         getOAuthToken: cb => { cb(token); },
       });
       // set up the player's event handlers
@@ -186,7 +177,7 @@ class App extends Component {
         :  
         (<div>
           <button onClick={() => {
-            window.location = window.location = 'http://localhost:8888/login' }
+            window.location = window.location = 'https://spotatofy.herokuapp.com/login' }
           }
           style={{padding: '20px', 'fontSize': '50px', 'marginTop': '20px'}}>Sign in with Spotify</button>
         </div>)
