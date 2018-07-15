@@ -1,11 +1,10 @@
 {
-  "name": "example-create-react-app-express",
+  "name": "spotatofy",
   "version": "1.0.0",
-  "description": "Example on using create-react-app with a Node Express Backend",
+  "description": "Spotatofy",
   "author": {
-    "name": "Esau Silva",
-    "email": "esausilva85@gmail.com",
-    "url": "https://esausilva.com"
+    "name": "Phil Dominguez",
+    "email": "phild23@gmail.com"
   },
   "license": "MIT",
   "scripts": {
@@ -25,10 +24,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/esausilva/example-create-react-app-express.git"
+    "url": "https://github.com/phildominguez/spotatofy.git"
   },
   "bugs": {
-    "url": "https://github.com/esausilva/example-create-react-app-express/issues"
+    "url": "https://github.com/phildominguez/spotatofy/issues"
   },
   "keywords": [
     "node",
